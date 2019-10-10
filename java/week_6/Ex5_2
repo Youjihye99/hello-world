@@ -3,7 +3,7 @@ package org.javaro.lecture;
 public class Ex5_2 {
 
 	public static void main(String[] args) {
-		System.out.println("유지혜-20191010-변수");
+		System.out.println("유지혜-20191010-배열");
 		int a00=8;	int a01=5;	int a02=2;	int a03=3;	int a04=6;
 		int a10=5;	int a11=4;	int a12=1;	int a13=3;	int a14=7;
 		System.out.println("동일타입변수0="+a00+","+a01+","+a02+","+a03+","+a04);
