@@ -1,0 +1,57 @@
+<!doctype html><!--  inp.html  -->
+<html><head><meta chrset="utf-8"/><meta name="viewport" content="width=device-width, inital-scale=1"/>
+
+<style>
+   div#division { width:90%; height:400px; float:left; font-size:18px; overflow:scroll; background-color:white;  border:solid 1px gray; }
+     div#division1 {margin: 410px 0px 0px 0px; }
+</style>
+
+<title> 배열 </title>
+<body>
+
+   <header>
+      <h4> 유지혜</h4>
+   </header><br/>
+   <section>
+      <section>
+         <br/><p>코드</p>
+         <br/><div id="division">
+                <xmp>
+	package org.javaro.lecture;
+
+   public class Ex6_4 {
+
+      public static void main(String[] args) {
+         double x, y, area;
+         int idx;
+         x= 10; y = 20; idx = 1;
+         area = fn_area(idx,x,y);
+         System.out.println("사각형 면적 = "+area);
+         idx = 2;
+         area = fn_area(idx, x, y);
+         System.out.println("삼각형 면적 = "+area);
+      }
+      static double fn_area(int a, double b, double c) {
+         double result = 0;
+         if(a==1) {
+            result = b*c;
+         }else if(a==2) {
+            result = 0.5*b*c;
+         }
+         return result;
+      }
+
+   }
+            </xmp>
+         </div>
+      </section>
+   
+      <section><div id="division1">
+           <br/><br/><p>소스코드6_4</p></div>
+            <img src="/java/week_6/images/소스코드6_4.png" alt="소스코드6_4" />
+         <br/><p>결과코드6_4</p>
+            <img src="/java/week_6/images/소스코드6_4.png" alt="결과코드6_4" />
+      </section>
+   </section>
+   </body>
+</html>
