@@ -1,1 +1,56 @@
+<!doctype html><!--  inp.html  -->
+<html><head><meta chrset="utf-8"/><meta name="viewport" content="width=device-width, inital-scale=1"/>
 
+<style>
+   div#division { width:90%; height:400px; float:left; font-size:18px; overflow:scroll; background-color:white;  border:solid 1px gray; }
+     div#division1 {margin: 410px 0px 0px 0px; }
+</style>
+
+<title> 배열 </title>
+<body>
+
+   <header>
+      <h4> 유지혜</h4>
+   </header><br/>
+   <section>
+      <section>
+         <br/><p>코드</p>
+         <br/><div id="division">
+                <xmp>
+package org.javaro.lecture;
+
+public class Ex5_4 {
+
+	public static void main(String[] args) {
+		System.out.println("유지혜-20191010-배열");
+		int temp;
+		int [] a=new int [] {8,5,2,3,6};
+		for(int i=0;i<a.length-1;i++) {
+			for(int j=1+i;j<a.length;j++) {
+				if(a[i]>a[j]) {
+					temp=a[j];
+					a[j]=a[i];
+					a[i]=temp;
+				}
+			}
+		}
+		for(int i=0;i<a.length;i++) { //데이터수만큼 for문 실행   //for(int obj: a){
+			System.out.print(a[i]+" ");			//System.out.print(obj);
+		}							//}
+
+	}
+
+}
+            </xmp>
+         </div>
+      </section>
+   
+      <section><div id="division1">
+           <br/><br/><p>소스코드5</p></div>
+            <img src="/java/week_6/images/소스코드5_5.png" alt="소스코드5" />
+         <br/><p>결과코드5</p>
+            <img src="/java/week_6/images/소스코드5_5.png" alt="결과코드5" />
+      </section>
+   </section>
+   </body>
+</html>
