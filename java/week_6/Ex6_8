@@ -1,17 +1,48 @@
-package org.javaro.lecture;
+<!doctype html><!--  inp.html  -->
+<html><head><meta chrset="utf-8"/><meta name="viewport" content="width=device-width, inital-scale=1"/>
 
-public class Ex6_8 {
+<style>
+   div#division { width:90%; height:400px; float:left; font-size:18px; overflow:scroll; background-color:white;  border:solid 1px gray; }
+     div#division1 {margin: 410px 0px 0px 0px; }
+</style>
 
-	   public static void main(String[] args) {
-	     
-	      double x, y;
-	      x = 10.0; y = 20.0;
-	      double sub_value = fn_sub(x,y);
-	      System.out.println("빼기 = "+sub_value);
-	   }
-	   public static double fn_sub(double x, double y) {
-	      double result;
-	      result = x-y;
-	      return result;
-	   }
-	}
+<title> 배열 </title>
+<body>
+
+   <header>
+      <h4> 유지혜</h4>
+   </header><br/>
+   <section>
+      <section>
+         <br/><p>코드</p>
+         <br/><div id="division">
+                <xmp>
+   package org.javaro.lecture;
+
+   public class Ex6_8 {
+
+      public static void main(String[] args) {
+          double x, y;
+	  x = 10.0; y = 20.0;
+	  double sub_value = fn_sub(x,y);
+	  System.out.println("빼기 = "+sub_value);
+      }
+       public static void main(String[] args) {
+       	  double result;
+	  result = x-y;
+	  return result;
+      }
+   }
+            </xmp>
+         </div>
+      </section>
+   
+      <section><div id="division1">
+           <br/><br/><p>소스코드6_8</p></div>
+            <img src="/java/week_6/images/소스코드6_8.png" alt="소스코드6_8" />
+         <br/><p>결과코드6_8</p>
+            <img src="/java/week_6/images/소스코드6_8.png" alt="결과코드6_8" />
+      </section>
+   </section>
+   </body>
+</html>
