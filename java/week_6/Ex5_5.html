@@ -17,30 +17,35 @@
          <br/><p>코드</p>
          <br/><div id="division">
                 <xmp>
-package org.javaro.lecture;
+	package org.javaro.lecture;
 
-public class Ex5_4 {
-
-	public static void main(String[] args) {
-		System.out.println("유지혜-20191010-배열");
-		int temp;
-		int [] a=new int [] {8,5,2,3,6};
-		for(int i=0;i<a.length-1;i++) {
-			for(int j=1+i;j<a.length;j++) {
-				if(a[i]>a[j]) {
-					temp=a[j];
-					a[j]=a[i];
-					a[i]=temp;
+	public class Ex5_5{
+		public static void main(String[] args) {
+			int max = 30;
+			boolean [] a = new boolean[max];
+			for(int i=0; i<max; i++) {
+				a[i] = true;
+			}
+			for(int i=2; i<max; i++){
+				if(a[i-1]){
+					for(int j=2; i*j <= max; j++){
+						a[i*j-1] = false;
+					}
+				}
+				else {
+					continue;
 				}
 			}
+
+
+			for(int i=1; i<max; i++) {
+				if(a[i]) {
+					System.out.print((i+1) + " ");
+				}
+			}
+
 		}
-		for(int i=0;i<a.length;i++) { //데이터수만큼 for문 실행   //for(int obj: a){
-			System.out.print(a[i]+" ");			//System.out.print(obj);
-		}							//}
-
 	}
-
-}
             </xmp>
          </div>
       </section>
